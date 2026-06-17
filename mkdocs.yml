@@ -1,0 +1,76 @@
+site_name: 配置一个好的代码仓库
+site_description: 工程团队代码仓库治理、CI/CD、安全合规与交付体系基线
+site_author: xing930712-ux
+repo_url: https://github.com/xing930712-ux/-
+repo_name: xing930712-ux/-
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.tabs.link
+  palette:
+    - scheme: default
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: 切换到深色模式
+    - scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到浅色模式
+
+nav:
+  - 首页: index.md
+  - 代码仓库配置方案:
+      - 总览: repository-setup/index.md
+      - 平台选型: repository-setup/platform-selection.md
+      - 仓库结构与分支: repository-setup/repo-structure.md
+      - 审查与权限治理: repository-setup/review-governance.md
+      - CI/CD 与发布回滚: repository-setup/ci-cd.md
+      - 安全合规与运维: repository-setup/security-ops.md
+      - 落地计划与模板: repository-setup/rollout-templates.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/xing930712-ux/-
