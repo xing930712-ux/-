@@ -8,6 +8,10 @@
 
 > 第一次使用时，请到仓库的 **Settings → Pages**，确认 Source 使用 **GitHub Actions**。也可以选择 **Deploy from a branch → gh-pages / root**。是的，连发布文档也要点一下按钮，人类文明的仪式感真顽强。
 
+## 部署状态
+
+Pages 设置已完成后，推送到 `main` 会自动触发文档站构建和发布。
+
 ## 部署方式
 
 仓库已经配置两套发布方式：
